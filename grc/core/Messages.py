@@ -49,7 +49,7 @@ def send(message):
         message: a message string
     """
     for messenger in MESSENGERS_LIST:
-        messenger(_indent + message)
+        messenger(_indent + str(message))
 
 # register stdout by default
 register_messenger(sys.stdout.write)
